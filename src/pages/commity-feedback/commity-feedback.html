@@ -1,0 +1,47 @@
+<!--
+  Generated template for the CommityFeedbackPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Feedback</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background: url('assets/imgs/baki.jpg');  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;" padding>
+
+  <div>
+    <img src="https://www.smithhopen.com/mediakit/2012/Logo_Only/Logo_only_2400x2367.png" style="margin-left: 35%; margin-top: 30%" width="100px"/>
+  </div>
+
+  <ion-list>
+
+
+
+    <ion-item style="border-radius: 50px; margin-top:5%;  margin-bottom: 5px">
+      <ion-label >Message Title</ion-label>
+      <ion-input [(ngModel)]="Title" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item style="border-radius: 50px; margin-bottom: 5px">
+      <ion-label >Message</ion-label>
+      <ion-input [(ngModel)]="Message" type="text"></ion-input>
+    </ion-item>
+
+
+    <ion-item style="background: none">
+      <button ion-button color="primary" (click)="sendFeedback()" full style="height: 30px;" round>Feed Back</button>
+    </ion-item>
+
+  </ion-list> 
+
+</ion-content>

@@ -1,0 +1,100 @@
+<!--
+  Generated template for the CommityAddCommityPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Commity</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content style="background: url('assets/imgs/baki.jpg');  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;" padding>
+
+  <div>
+    <img src="https://www.smithhopen.com/mediakit/2012/Logo_Only/Logo_only_2400x2367.png" style="margin-left: 35%; margin-top: 10%" width="100px"/>
+  </div>
+
+
+
+
+ 
+
+  <ion-list>
+
+
+
+    <ion-item style="margin-top:5%; border-radius: 50px; margin-bottom: 5px;">
+      <ion-label>Commity Name</ion-label>
+      <ion-input [(ngModel)]="cName" type="text"></ion-input>
+    </ion-item>
+
+
+
+    <ion-item style="border-radius: 50px; margin-bottom: 5px">
+      <ion-label>Start Date</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY"  min="2017" max="2018-10-31" [(ngModel)]="cStartDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item style="border-radius: 50px; margin-bottom: 5px">
+      <ion-label>End Date</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY"  min="2016" max="2025-10-31" [(ngModel)]="cEndDate"></ion-datetime>
+    </ion-item>
+
+
+
+    <ion-item style="border-radius: 50px; margin-bottom: 5px">
+      <ion-label>Commity Owner :</ion-label>
+      <ion-input [(ngModel)]="cOwner" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item style="border-radius: 50px; margin-bottom: 5px;">
+      <ion-label>Commity Type</ion-label>
+      <ion-select [(ngModel)]="cCommityType" interface="popover">
+        <ion-option value="MonthCol">Monthly Collect</ion-option>
+        <ion-option value="numberSys">Number System</ion-option>
+        
+      </ion-select>
+    </ion-item>
+
+
+    <ion-item style=" border-radius: 50px; margin-bottom: 5px;">
+      <ion-label>Commity No. of Months</ion-label>
+      <ion-input [(ngModel)]="cMonth" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item style=" border-radius: 50px; margin-bottom: 5px;">
+      <ion-label>Commity No. of Members</ion-label>
+      <ion-input [(ngModel)]="cMember" type="number"></ion-input>
+    </ion-item>
+
+
+    <ion-item style=" border-radius: 50px; margin-bottom: 5px;">
+      <ion-label>Commity No. of Amount</ion-label>
+      <ion-input [(ngModel)]="cAmount" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item style="border-radius: 50px; margin-bottom: 20px; background: none">
+      <ion-label>Is Active:</ion-label>
+      <ion-checkbox color="dark"  [(ngModel)]="cCheck" ></ion-checkbox>
+    </ion-item>
+
+    <!-- <ion-item style="background: none"> -->
+      <button ion-button (click)="addCommity()" color="primary" full style="height: 30px;" round>Add Commity</button>
+    <!-- </ion-item> -->
+
+  </ion-list>
+
+
+
+
+</ion-content>

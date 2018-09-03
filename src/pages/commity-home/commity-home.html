@@ -1,0 +1,127 @@
+<ion-header class="headerIndex">
+
+  <!-- <ion-navbar hideBackButton color="headerFooterColor">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button> -->
+
+  <!-- <ion-title></ion-title>
+  </ion-navbar> -->
+
+</ion-header>
+
+<ion-content style="background: url('assets/imgs/baki.jpg');  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;" padding>
+
+
+  <div class="logo" style="text-align: center;">
+    <img alt="logo" src="https://www.smithhopen.com/mediakit/2012/Logo_Only/Logo_only_2400x2367.png" width="100px">
+    <!-- <p class="slogan">Attitude Is A Little Thing That Makes A Big Difference</p> -->
+  </div>
+
+  <ion-list style="background-color: transparent">
+
+    <!-- <ion-item *ngIf="Priviliges" style="padding-left:0px ;background-color: transparent;">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/ListImages/SchoolTimings.png" (click)="addMember()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="addMember()" style="cursor: pointer">Add Member</h2>
+      <p class="listItem_info" (click)="addMember()" style="cursor: pointer">Today:9:00pm - 12:30pm</p>
+    </ion-item> -->
+
+
+    <ion-item *ngIf="Priviliges" style="padding-left:0px ;background-color: transparent;">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/setNumber.png" width="100%" (click)="addsetNumber()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="addsetNumber()" style="cursor: pointer">Set Numbers</h2>
+      <p class="listItem_info" (click)="addsetNumber()" style="cursor: pointer">Today:9:00pm - 12:30pm</p>
+    </ion-item>
+
+    <ion-item *ngIf="Priviliges" style="padding-left:0px ;background-color: transparent;">
+      <ion-thumbnail item-start>
+        <img src="http://icons.iconarchive.com/icons/dryicons/aesthetica-2/128/user-add-icon.png" width="100%"  (click)="addMember()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="addMember()" style="cursor: pointer">Add Member</h2>
+      <p class="listItem_info" (click)="addMember()" style="cursor: pointer">Today:9:00pm - 12:30pm</p>
+    </ion-item>
+
+    <ion-item *ngIf="Priviliges" style="padding-left:0px ;background-color: transparent;">
+      <ion-thumbnail item-start>
+        <img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/key-icon.png" width="100%" (click)="viewActivation()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="viewActivation()" style="cursor: pointer">View Activation Key</h2>
+      <p class="listItem_info" (click)="viewActivation()" style="cursor: pointer">Today:9:00pm - 12:30pm</p>
+    </ion-item>
+
+    <ion-item *ngIf="Priviliges" style="padding-left:0px; background-color: transparent">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/add commity.png" width="100%" (click)="addCommity()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="addCommity()" style="cursor: pointer">Add Commity</h2>
+      <p class="listItem_info" (click)="addCommity()" style="cursor: pointer">Pakistan Day Assembly...</p>
+    </ion-item>
+
+    <ion-item *ngIf="Priviliges" style="padding-left:0px; background-color: transparent">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/addmemtoCom.png" (click)="setMember()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="setMember()" style="cursor: pointer">Member to Commity</h2>
+      <p class="listItem_info" (click)="setMember()" style="cursor: pointer">Your childern's complete info...</p>
+    </ion-item>
+
+    <ion-item  style="padding-left:0px; background-color: transparent">
+      <ion-thumbnail item-start>
+        <img src="http://www.skyhighadventureclub.com/images/view_member.png" width="100%" (click)="viewMember()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="viewMember()" style="cursor: pointer">View Member</h2>
+      <p class="listItem_info" (click)="viewMember()" style="cursor: pointer">Sports points 4/5</p>
+    </ion-item>
+
+    <ion-item *ngIf="Priviliges" style="padding-left:0px; background-color: transparent">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/Payment.png" (click)="recievePayment()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="recievePayment()" style="cursor: pointer">Recieve Payment</h2>
+      <p class="listItem_info" (click)="recievePayment()" style="cursor: pointer">Sports points 4/5</p>
+    </ion-item>
+
+    <ion-item  style="padding-left:0px; background-color: transparent">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/view commity.png" (click)="viewCommity()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="viewCommity()" style="cursor: pointer">View commity</h2>
+      <p class="listItem_info" (click)="viewCommity()" style="cursor: pointer">Sports points 4/5</p>
+    </ion-item>
+
+    <ion-item style="padding-left:0px; background-color: transparent">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/viewpaymrnt.png" (click)="AmountView()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="AmountView()" style="cursor: pointer">View Recieve Amount</h2>
+      <p class="listItem_info" (click)="AmountView()" style="cursor: pointer">Sports points 4/5</p>
+    </ion-item>
+
+    <ion-item style="padding-left:0px; background-color: transparent">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/feedback.png" (click)="feeback()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="feeback()" style="cursor: pointer">Feed Back</h2>
+      <p class="listItem_info" (click)="feeback()" style="cursor: pointer">Sports points 4/5</p>
+    </ion-item>
+
+    <ion-item *ngIf="Priviliges" style="padding-left:0px; background-color: transparent">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/viewFeedback.png" (click)="feebackView()" style="cursor: pointer">
+      </ion-thumbnail>
+      <h2 (click)="feebackView()" style="cursor: pointer">Feed Back View</h2>
+      <p class="listItem_info" (click)="feebackView()" style="cursor: pointer">Sports points 4/5</p>
+    </ion-item>
+
+
+  </ion-list>
+
+</ion-content>

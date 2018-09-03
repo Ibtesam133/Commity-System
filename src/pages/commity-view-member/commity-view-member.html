@@ -1,0 +1,51 @@
+<!--
+  Generated template for the CommityViewMemberPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>View Member</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background: url('assets/imgs/baki.jpg');  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;" padding>
+
+  <div>
+    <img src="https://www.smithhopen.com/mediakit/2012/Logo_Only/Logo_only_2400x2367.png" style="margin-left: 35%; margin-top: 10%"
+      width="100px" />
+  </div>
+
+
+  <ion-item style="border-radius: 50px; margin-bottom: 15px; margin-top: 20px">
+    <ion-label>Select Commity</ion-label>
+    <ion-select (ionChange)="SelectCommity($event)" [(ngModel)]="CommityType" interface="popover">
+      <ion-option  value="All">ALL</ion-option>
+      <ion-option *ngFor="let commity of com" [value]="commity.Key">{{commity.CommityName}}</ion-option>
+      <!-- <ion-option value="numberSys">Number System</ion-option> -->
+    </ion-select>
+  </ion-item>
+
+  <ion-list>
+
+    
+      <ion-item style="background: none" *ngFor="let member of arr">
+        <ion-thumbnail item-start>
+          <img src="http://financemj.com/wp-content/uploads/2017/04/admin.png">
+        </ion-thumbnail>
+        <h2>{{member.MemberName}}</h2>
+        <p>{{member.MemberCell}}</p>
+        <button  (click)="viewMember(member.Key)" ion-button clear item-end>View</button>
+      </ion-item>
+    
+
+  </ion-list>
+</ion-content>
